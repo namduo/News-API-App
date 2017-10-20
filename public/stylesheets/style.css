@@ -1,8 +1,34 @@
 body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  padding-top: 50px;
+  font-family: 'Open Sans', sans-serif;
+  padding: 5rem 0;
+
 }
 
-a {
-  color: #00B7FF;
+a, a.url {
+  color: #bb1919 !important;
+  text-decoration: none;
+}
+
+p {
+  color: #767879;
+  line-height: 22px;
+  font-size: 14px;
+}
+
+/* MENU */
+.navbar {
+	background-color: #bb1919;
+}
+.nav-link {
+	color: #ffffff !important;
+  letter-spacing: 1px;
+}
+.nav-link:hover {
+  color: #ffffff;
+}
+
+h2 {
+  color: #bb1919;
+  text-decoration: none;
+  margin-bottom: 2rem;
 }
