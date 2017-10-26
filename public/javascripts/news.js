@@ -5,7 +5,7 @@ $.ajax('/news1/api', {
   var articleData = JSON.parse(data);
 	console.log(articleData);
 
-	var articleTitle = '';
+	var articleTitle = '<h1>'+ articleData.source +' Top Stories</h1>';
 
   for (var j = 0; j < articleData.articles.length; j++) {
 

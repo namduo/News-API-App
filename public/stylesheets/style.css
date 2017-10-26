@@ -28,6 +28,12 @@ p {
   color: #ffffff;
 }
 
+h1 {
+  color: #bb1919;
+  font-size: 2rem;
+  margin: 3rem 0;
+}
+
 h2 {
   color: #bb1919;
   text-decoration: none;
