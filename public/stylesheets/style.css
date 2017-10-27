@@ -62,3 +62,26 @@ li {
    border: solid 20px white;
    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.3);
 }
+
+/* articles */
+.articles {
+  height: 30vh;
+  background: red;
+  margin-bottom: 2rem;
+  transition: .5s;
+}
+.articles-h {
+  height: 0vh;
+  transition: .5s;
+}
+
+
+
+/* Feed */
+.fav-feed {
+  margin-bottom: 3rem;
+}
+
+.hide {
+  display: none !important;
+}

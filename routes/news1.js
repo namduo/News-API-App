@@ -11,7 +11,7 @@ router.get('/', function(req, res, next) {
 
 router.get('/api', function(req, res, next) {
 
-  request('https://newsapi.org/v1/articles?source=abc-news-au&sortBy=top&apiKey=d8e2c7eb2cc4491fa50547eb54c1aa61', function (error, response, body) {
+  request('https://newsapi.org/v1/articles?source=daily-mail&sortBy=top&apiKey=d8e2c7eb2cc4491fa50547eb54c1aa61', function (error, response, body) {
     console.log('error:', error); // Print the error if one occurred
     console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
 

@@ -7,12 +7,12 @@ $.ajax('/news1/api', {
 
 	var articleTitle = '<h1>'+ articleData.source +' Top Stories</h1>';
 
+
   for (var j = 0; j < articleData.articles.length; j++) {
 
-
-
-
+  // Image
 	articleTitle += '<div class="articleImage" style=\"background-image: url(\''+articleData.articles[j].urlToImage +'\');\"></div>'
+
 
   articleTitle += '<a href="' + articleData.articles[j].url + '" target="_blank"><h4>' + articleData.articles[j].title + '</h4></a>';
 	articleTitle += '<p>' + articleData.articles[j].description + '</p>';
