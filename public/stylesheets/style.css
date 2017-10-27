@@ -1,13 +1,15 @@
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   padding: 5rem 0;
-  background-color: #fff;
-
 }
 
 a, a.url {
-  color: #bb1919 !important;
+  color: #bb1919;
   text-decoration: none;
+}
+
+a:hover {
+  color: inherit;
 }
 
 p {
@@ -29,46 +31,55 @@ p {
 }
 
 h1 {
+  font-family: 'Open Sans', sans-serif;
   color: #bb1919;
   font-size: 2rem;
   margin-top: 0.5rem;
 }
 
 h2 {
+  font-family: 'Open Sans', sans-serif;
   color: #bb1919;
+  font-weight: bold;
   text-decoration: none;
   margin-bottom: 2rem;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
 }
 
 h4 {
-  color: #bb1919;
+  font-family: 'Open Sans', sans-serif;
+  color: #222;
+  font-weight: bolder;
   text-decoration: none;
   margin-top: 2rem;
   line-height: 30px;
+  font-size: 1.2rem;
 }
 
 li {
   list-style: none;
 }
 
+li.newslink {}
+
 .published {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
+  color: #222;
 }
 
 .articleImage {
-   height: 35vh;
-   background-position:100% 50%;
+   height: 20vh;
+   background-position: center;
    background-size: cover;
-   border: solid 5px white;
-   /*box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.3);*/
+   border: solid 3px #eeeded;
 }
 
 /* articles */
 .articles {
   height: 20vh;
-  background: red;
+  border-radius: 10px;
   margin-bottom: 2rem;
-  transition: .5s;
 }
 
 .top-stories {
@@ -79,14 +90,16 @@ li {
 
 
 /* Feed */
-#sourceContainer {}
+#sourceContainer {
+  padding-right: 2rem;
+}
 #articlesContainer {
-  background: #f8f9fa;
-  width: 24vw;
-  height: 100vh;
+  height: 170vh;
+  padding-left: 1rem;
   padding: 1.5rem;
   overflow: scroll;
-  border: solid 1px black;
+  background-color: #f8f6f6;
+  border: solid 10px #eeeded;
   right: 0;
 }
 

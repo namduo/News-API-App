@@ -1,3 +1,4 @@
+// Source AJAX
 $.ajax('/newsSources', {
   method: "GET",
 
@@ -22,6 +23,8 @@ $.ajax('/newsSources', {
   }
 });
 
+
+// Article AJAX
 $('body').on('click', '.newslink a', function() {
     $.ajax('/news1/' + $(this).attr('data-source'), {
         method: "GET",
@@ -29,7 +32,7 @@ $('body').on('click', '.newslink a', function() {
         success: function(data){
             var articleData = JSON.parse(data);
 
-            var articleTitle = '<h1>'+ articleData.source +' Top Stories</h1>';
+            var articleTitle = '<h2>'+ articleData.source +' Top Stories</h2>';
 
             for (var j = 0; j < articleData.articles.length; j++) {
                 articleTitle += '<div class="articleImage" style=\"background-image: url(\''+articleData.articles[j].urlToImage +'\');\"></div>';
