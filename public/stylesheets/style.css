@@ -65,7 +65,7 @@ li {
 
 /* articles */
 .articles {
-  height: 30vh;
+  height: 20vh;
   background: red;
   margin-bottom: 2rem;
   transition: .5s;
@@ -83,8 +83,10 @@ li {
 #articlesContainer {
   background: #f8f9fa;
   width: 24vw;
+  height: 100vh;
   padding: 1.5rem;
   overflow: scroll;
+  border: solid 1px black;
   right: 0;
 }
 
