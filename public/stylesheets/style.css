@@ -31,7 +31,7 @@ p {
 h1 {
   color: #bb1919;
   font-size: 2rem;
-  margin: 3rem 0;
+  margin-top: 0.5rem;
 }
 
 h2 {
@@ -56,11 +56,11 @@ li {
 }
 
 .articleImage {
-   height: 40vh;
+   height: 35vh;
    background-position:100% 50%;
    background-size: cover;
-   border: solid 20px white;
-   box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.3);
+   border: solid 5px white;
+   /*box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.3);*/
 }
 
 /* articles */
@@ -70,16 +70,22 @@ li {
   margin-bottom: 2rem;
   transition: .5s;
 }
-.articles-h {
-  height: 0vh;
-  transition: .5s;
+
+.top-stories {
+  cursor: pointer;
+  margin-bottom: 2rem;
+  color: #e98787;
 }
 
 
-
 /* Feed */
-.fav-feed {
-  margin-bottom: 3rem;
+#sourceContainer {}
+#articlesContainer {
+  background: #f8f9fa;
+  width: 24vw;
+  padding: 1.5rem;
+  overflow: scroll;
+  right: 0;
 }
 
 .hide {
