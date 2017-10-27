@@ -1,6 +1,6 @@
 body {
   font-family: 'Roboto', sans-serif;
-  padding: 5rem 0;
+  padding: 7rem 0;
 }
 
 a, a.url {
@@ -14,7 +14,7 @@ a:hover {
 
 p {
   color: #767879;
-  line-height: 22px;
+  line-height: 25px;
   font-size: 14px;
 }
 
@@ -25,6 +25,7 @@ p {
 .nav-link {
 	color: #ffffff !important;
   letter-spacing: 1px;
+  font-size: 1.5rem;
 }
 .nav-link:hover {
   color: #ffffff;
@@ -94,7 +95,7 @@ li.newslink {}
   padding-right: 2rem;
 }
 #articlesContainer {
-  height: 170vh;
+  height: 200vh;
   padding-left: 1rem;
   padding: 1.5rem;
   overflow: scroll;

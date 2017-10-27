@@ -30,13 +30,13 @@ $('body').on('click', '.newslink a', function() {
         method: "GET",
 
         success: function(data){
+          
             var articleData = JSON.parse(data);
-
             var articleTitle = '<h2>'+ articleData.source +' Top Stories</h2>';
 
             for (var j = 0; j < articleData.articles.length; j++) {
-                articleTitle += '<div class="articleImage" style=\"background-image: url(\''+articleData.articles[j].urlToImage +'\');\"></div>';
 
+                articleTitle += '<div class="articleImage" style=\"background-image: url(\''+articleData.articles[j].urlToImage +'\');\"></div>';
                 articleTitle += '<a href="' + articleData.articles[j].url + '" target="_blank"><h4>' + articleData.articles[j].title + '</h4></a>';
                 articleTitle += '<p>' + articleData.articles[j].description + '</p>';
                 articleTitle += '<p class="published">' + '<strong>Published:</strong> ' + articleData.articles[j].publishedAt + '</p>';
