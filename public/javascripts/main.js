@@ -1,4 +1,4 @@
-// Source AJAX
+// newsSources GET AJAX
 $.ajax('/newsSources', {
   method: "GET",
 
