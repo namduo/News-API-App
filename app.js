@@ -7,8 +7,11 @@ var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
 var news1 = require('./routes/news1');
+<<<<<<< HEAD
 var favourites = require('./routes/favourites');
 var newsSources = require('./routes/newsSources');
+=======
+>>>>>>> parent of 564e971... Add favourites on click
 
 var app = express();
 
@@ -26,8 +29,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/news1', news1);
+<<<<<<< HEAD
 app.use('/favourites', favourites);
 app.use('/newsSources', newsSources);
+=======
+>>>>>>> parent of 564e971... Add favourites on click
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
