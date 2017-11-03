@@ -25,7 +25,7 @@ p {
 .nav-link {
 	color: #ffffff !important;
   letter-spacing: 1px;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 .nav-link:hover {
   color: #ffffff;
@@ -106,4 +106,24 @@ li.newslink {}
 
 .hide {
   display: none !important;
+}
+
+/* Favourite */
+
+#favouriteContainer {
+  background: red;
+  height: 10vh;
+}
+
+.addFavourites {
+  margin-left: 0.5em;
+  color: #e2e0e0;
+}
+
+.addedFavourites {
+  color: #ffc107;
+}
+
+.addFavourites:hover {
+  color: #ffc107;
 }

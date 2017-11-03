@@ -1,3 +1,5 @@
+var posts = {};
+
 // newsSources GET AJAX
 $.ajax('/newsSources', {
   method: "GET",
@@ -9,9 +11,15 @@ $.ajax('/newsSources', {
 
     for (var i = 0; i < myData.sources.length; i++) {
 
-      textTitle += '<li class="newslink"><a href="#" data-source="'+ myData.sources[i].id +'">' + myData.sources[i].name + '</a>';
+      textTitle += '<li class="newslink"><a href="#" data-source="'+ myData.sources[i].id +'">' + myData.sources[i].name +' </a><a class="addFavourites" href="#"><i class="fa fa-star" id="favourites" aria-hidden="true"></i></a>';
       textTitle += '<p>' + myData.sources[i].description + '</p>';
 
+      //adds a property to the global posts variable for the 'current' news page in the loop
+      posts[myData.sources[i].id] = {
+        title: myData.sources[i].name,
+        description: myData.sources[i].description,
+        link: myData.sources[i].url
+      };
     }
 
     textTitle += '</ul>';
@@ -22,6 +30,32 @@ $.ajax('/newsSources', {
       console.log('error: ' + error)
   }
 });
+
+
+// Favourites hover
+
+$('body').on('click', '.addFavourites', function() {
+  $(this).toggleClass("addedFavourites");
+});
+
+// //when clicking the 'Add to favourites' button, the ajax post request sends the specific news source object (within
+// // the posts variable) to the favourites.js file, which then saves it to the favourites database.
+//
+// $('body').on('click', '#favourites', function(){
+//     var id = $(this).parent().attr("identifier"); //gets the specific news source property by means of the identifier
+//    $.ajax('../favourites', {
+//        method: "POST",
+//        data: posts[id], //posts the specific news source property by means of the id defined above
+//        title: req.body.title,
+//        description: req.body.description,
+//        success: function(data){
+//            console.log(data);
+//        },
+//        error: function(error){
+//            console.log('error: ' + error)
+//        }
+//    })
+// });
 
 
 // Article AJAX
